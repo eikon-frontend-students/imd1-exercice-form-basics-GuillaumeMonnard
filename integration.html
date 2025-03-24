@@ -4,6 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulaires - Bases - Intégration</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <h1>Discutons et collaborons sur des <span>projets</span> super!</h1>
+    <form
+      action="https://formsubmit.co/guillaume.monnard@studentfr.ch"
+      method="POST"
+    >
+      <div id="first">
+        <p>I'm interested in</p>
+        <div class="container">
+          <label for="radio1">
+            UI / UX Design
+            <input type="radio" id="radio1" name="UI/UX" />
+          </label>
+          <label for="radio2">
+            Web Design
+            <input type="radio" id="radio2" name="WEB DESIGN" />
+          </label>
+        </div>
+        <div class="container">
+          <label for="radio3">
+            Graphic Design
+            <input type="radio" id="radio3" name="GRAPHIC DESIGN" />
+          </label>
+          <label for="radio4">
+            Other
+            <input type="radio" id="radio4" name="OTHER" />
+          </label>
+        </div>
+      </div>
+
+      <div>
+        <label for="name">Name </label
+        ><input
+          type="text"
+          id="name"
+          placeholder="Your name"
+          name="Name"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="email">Email * </label
+        ><input
+          type="email"
+          id="email"
+          placeholder="Your email"
+          name="Email"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="message" name="Message" required="">Message * </label>
+        <textarea
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Your message"
+        ></textarea>
+      </div>
+
+      <label for="button"></label>
+      <button type="submit">Send</button>
+    </form>
+  </body>
 </html>
